@@ -20,3 +20,15 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# Streamlit
+.streamlit/
+
+# Temporary files
+temp_*.pdf
+temp_*.csv
+*.tmp
+
+# Database directories
+traducciones_db/
+local_knowledge_db/
+

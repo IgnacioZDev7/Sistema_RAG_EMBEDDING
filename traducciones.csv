@@ -1,0 +1,114 @@
+﻿id;categoria;español;aymara;quechua
+1;comunicacion efectiva;Yo soy el doctor/la doctora...;Nayax qullirïtwa...;Ñuqaqa doctormi kani..
+2;comunicacion efectiva;Yo hablo poquito Aymara;Nayax mä juk’it aymar parlastwa;Aymarata pisillatam rimani
+3;comunicacion efectiva;Cuando te pregunte me vas a decir si ó me vas a decir no;Jiskt’äma ukhax, Jïsa sitätawa jan ukax Janiwa sitätawa;Jiskt’äma ukhax, Jïsa sitätawa jan ukax Janiwa sitätawa
+4;comunicacion efectiva;¿Si?;¿Jïsa?;Arí?
+5;comunicacion efectiva;¿No?;¿Janiti?;Mana?
+6;comunicacion efectiva;¿Cómo te llamas?;¿Sutimax kunasa?;Imataq sutiyki?
+7;comunicacion efectiva;¿Cuántos años tienes?;Kawqha maranitasa?;Hayka watayuqtaq kanki?
+8;comunicacion efectiva;¿Comprendiste todo?;¿Tukuy imatachu entienderqanki? tuku imatachu intindik´ani;¿Taqi kunsa amuyawaytati?
+9;comunicacion efectiva;Sí entendí;arí entienderqanim Ari entendercanim;Jisa nayajj amuyasta
+10;comunicacion efectiva;No entendí;Manam entienderqanichu hanihua intindinquichu;Nayajj janiw amuykayätti
+11;comunicacion efectiva;¿Tiene alguna pregunta?;¿Ima tapukuyniykipas, tapukuyniykipas kanchu? ima tapucunikipas, tapukuynikipas;¿Kuna jisktʼanakas utji?
+12;comunicacion efectiva;Si tengo una pregunta;Sichus tapukuyniy kanman chayqa sichus tapukuniy  kanma chayk´a;Nayax mä jiskt’äwinïtwa
+13;comunicacion efectiva;No, ninguna pregunta;Mana mana tapukuykuna mana haniw tapukuykuna;Janiwa, janiw jiskt’asiñas utjkiti
+15;comunicacion efectiva;¿Le repito algo?;¿Imatapas yapamanta rimasaac?;¿Kunsa mayamp lurañajajj wakisispati?
+14;comunicacion efectiva;¿Cuando debo tomar?;"¿Hayka hampikunatataq upyanay?
+Jaica jampicunatataj uyanai";¿Kunapachas umañajaxa?
+16;comunicacion efectiva;¿Cómo debo tomar?;¿Imaynatataq hampita upyanay?;¿Kunjamsa apsuñaja?
+17;comunicacion efectiva;¿Que tengo que tomar?;¿Ima hampikunatataq upyanay?;¿Kunsa nayajj apasiñaja?
+18;comunicacion efectiva;¿Necesita algo más?;¿Imatapas necesitankichu? imatapas necesitankichu;¿Yaqhanak munasmati?
+19;comunicacion efectiva;Gracias;Pay suma;"
+riqsikuyki"
+20;comunicacion efectiva;Hasta luego;Asllakama asllakama;Ukat jikisiñani
+21;comunicacion efectiva;Que le vaya bien;Suyakuy tukuy imapas allinta purinanta;Taqi kunas sum sarañapataki suyt’añani
+22;comunicacion efectiva;Tiene que cuidarse;Kikiykitam cuidakunayki ;Juma pachpaw sum uñjasiñama
+23;comunicacion efectiva;Que tenga buen día;qampaq allin punchaw Campaj Alin punchau;Aski uru churätam
+24;antecedentes;¿Fumas?;¿Pitirïtati?;¿Qamchu cigarrota pitanki?
+25;antecedentes;¿Tomas bebidas alcohólicas?;¿Machañ umañanak umirïtati?;¿Machaytachu ukyanki?
+26;antecedentes;¿En tu casa hay personas que tosen?;¿Utaman ujump usutanakax utjiti?;¿Kanchu wasiykipi tosaq runakuna?
+27;antecedentes;¿Tomas medicamentos?;¿Qullanak umirïtati?;¿Hampikunatachu tomanki?
+28;antecedentes;¿Qué medicamentos?;¿Kawkïr qullanaka?;¿Hampikunatachu tomanki?
+29;antecedentes;¿Has estado enfermo de diabetes?;¿Diabetes usump usuntirïtati?;¿Diabetes onqoywanchu onqorqanki?
+30;antecedentes;¿Cuándo te cortas sana bien?;¿Janch khart’asktä ukhax sumakit jaktam?;"Kikiyki kuchukuspaykiqa,
+¿allintachu qhaliyapun?"
+31;antecedentes;¿En tu casa hay alguien enfermo?;¿Utaman usutax utjiti?;¿Wasiykipi pipas unquq kanchu?
+32;antecedentes;¿De qué está enfermo?;¿Kunat usutasa?;¿Imawantaq unquchkan?
+33;sintomas;¿Desde Cuándo?;¿Kunapachata?;¿Hayk’aqmantapacha?
+34;sintomas;¿Cuántos días?;¿Qawqha urunaka?;¿Hayka punchawtaq?
+35;sintomas;¿Un rato?;¿Mä juk’a pachakiti?;¿Huk ratulla?
+36;sintomas;¿Un día?;¿Mä uruti?;¿Huk punchawchu?
+37;sintomas;¿Dos días?;¿Pä uruti?;Iskay punchaw?
+38;sintomas;¿Tres días?;¿Kimsa uruti?;Kimsa punchaw?
+39;sintomas;¿Una semana?;¿Mä paqüruti?;¿Huk semanachu?
+40;sintomas;¿Dos semanas?;¿Pä paqüruti?;¿Iskay semanachu?
+41;sintomas;¿Un mes?;¿Mä phaxsiti?;¿Huk killachu?
+42;sintomas;¿Dos meses?;¿Pä phaxsiti?;Iskay killa?
+43;sintomas;¿Un año?;¿Mä marati?;¿Huk watachu?
+44;sintomas;¿Dos años?;¿Pä marati?;Iskay wata?
+45;sintomas;¿Varios años?;¿Walja maranakati?;¿Achka watakuna?
+46;sintomas;¿Cuándo empezó?;¿Kunapachats qallti?;¿Hayk’aqmi qallarirqan?
+47;sintomas;¿A qué hora del día?;¿Kuna horasarus urunxa?;¿Ima horapitaq?
+48;sintomas;¿Al amanecer?;¿Willjtaruti?;¿Achikyaypi?
+49;sintomas;¿En la mañana?;¿Alwati?;Tutamanta?
+50;sintomas;¿Al mediodía?;¿Chika ururuti?;Chawpi punchawpi?
+51;sintomas;¿En la tarde?;¿Jayp’utuqiruti?;¿Tardetachu?
+52;sintomas;¿Al anochecer?;¿Arumthapiruti?;¿Ch’isiyaypichu?
+53;sintomas;¿En la noche?;¿Arumati?;Tutapi?
+54;sintomas;¿Todo el día?;¿Urpachati?;¿Tukuy punchawchu?
+55;sintomas;¿Te está doliendo?;¿Ususktamti?;¿K’irichisunkichu?
+56;sintomas;¿Qué te duele?;¿Kunas ustamxa?;¿Imataq k’irisunki?
+57;sintomas;¿Desde cuándo te duele?;¿Kunapachats ustamxa?;¿Hayk’aqmantapachan k’irisunki?
+58;sintomas;¿Cuánto tiempo te duele?;¿T’ajax qawch’apachaxisa?;¿Hayk’aqkamataq nanawan?
+59;sintomas;¿Ha calmado?;¿Samarxtamti?;¿Hawkayarunñachu?
+60;sintomas;¿Ha aumentado?;¿Juk’ampit ustamxa?;¿Astasqachu?
+61;sintomas;¿Te duele la cabeza?;¿P’iqix ustamti?;¿Umayki nananchu?
+62;sintomas;¿Te duele en el cuello?;¿Kunkax ustamti?;¿Kunkayki nananchu?
+63;sintomas;¿Tienes fiebre?;¿Chhuju usunïtati?;¿Fiebreyuqchu kanki?
+64;sintomas;¿Tienes escalofríos?;¿Thäjump’inïtati?;¿Chirichiyuqchu kanki?
+65;sintomas;¿Sudas en la noche?;¿Arumax jump’tati?;¿Tutachu sudanki?
+66;sintomas;¿Estas comiendo bien? (¿Te estás alimentando bien?);¿Walikt manq’asiskta?;¿Allintachu mikhushanki?
+67;sintomas;¿Has enflaquecido?;¿Tuxunttati?;¿Llampuñachu kanki?
+68;sintomas;¿Estas durmiendo bien?;¿Walikit ikiskta?;¿Allintachu puñuchkanki?
+69;sintomas;¿Sientes escozor?;¿Jastamti?;¿Picazón sientenkichu?
+70;sintomas;¿Estas Tosiendo?;¿Ujumpïtati?;¿Tosaqchu kachkanki?
+71;sintomas;¿Desde cuándo estás tosiendo?;¿Kunapachats ujta?;¿Hayk’aqmantapachan tosashanki?
+72;sintomas;¿Te duele el pecho al toser?;¿Ujktä ukhax lluquchuymax ustamti?;¿Toskuspayki sinqayki nananchu?
+73;sintomas;¿Estás escupiendo flemas cuando toses?;¿Ujktä ukhax jurmallawsanak thustati?;¿Toskuspaqa flematachu thuqachkanki?
+74;sintomas;¿No puedes respirar?;¿Janit samsuñ atkta?;¿Manachu samayta atinki?
+75;sintomas;¿Se te hinchan los pies?;¿Kayunakamax p’usunttamti?;¿Chakiykikuna punkinchu?
+76;sintomas;¿Cómo era la diarrea?;¿Wich’ux kunjamänsa?;¿Imaynataq chay diarrea karqa?
+77;sintomas;¿No has podido defecar?;¿Janit jumanakax defecañ puedipkta?;¿Manachu defecakuyta atirqanki?
+78;sintomas;¿Cómo son tus heces?;¿Kunjamsa heces ukanakamax utji?;¿Imaynataq hecesniykikuna?
+79;sintomas;¿Has tenido ganas de vomitar?;¿Waq’aqiñax purtamti?;¿Vomitayta munarqankichu?
+80;sintomas;¿Cuántas veces al día has vomitado?;¿Qawqhakutis urunx waq’aqsta?;¿Hayka kutitataq sapa punchaw aqturqanki?
+81;sintomas;¿Te duele al orinar?;¿Chhuxurktä ukhax ustamti?;¿Nananchu urinakuspayki?
+82;sintomas;¿Cuántas veces al día orinas?;¿Qawqhakutis urunx chhuxurta?;¿Hayka kutitataq sapa punchaw urinanki?
+83;sintomas;¿Tu orina tiene mal olor?;¿Chhuxumax thujsati?;¿Mana allin asnaqchu urinayki?
+84;exploracion;¿Cómo estás?;¿Kunjamäsktasa?;Imaynallam?
+85;exploracion;¿Sano?, ¿bien?;¿K’umarakïtati?, ¿Walikïtati?;Saludable?, ¿allinchu?
+86;exploracion;¿Enfermo?, ¿mal?;¿Usutätati?, ¿Jan walïtati?;Unqusqa?¿Mana allinchu?
+87;exploracion;Muéstrame donde te duele;Kawkhitas ustam ukawj uñicht’ayita;Maypi nanasqanmanta qawachiway
+88;exploracion;Dime si te duele cuando oprimo aquí;Akawj limt’ksmä ukhax ustamti;Willaway kaypi ñit’ispa nanawanchu icha manachu chayta
+89;frases laboratorio;Debe venir en ayunas;Mank'añ thakhi jutama;Manchariywan hamuy
+90;frases laboratorio;Tome asiento, por favor;Asiento katuqama;Mayllanapaq tiyay
+91;frases laboratorio;Le tomaremos una muestra de sangre;Wilani uñt'ayawi apt'añani;Yawar rikch'ay apachikuy
+92;frases laboratorio;Su resultado estará listo mañana;Uñt'awi jakhthapiwi qharu utjani;Rikhuchikuy paqarinmi kachkan
+93;frases laboratorio;Espere un momento, por favor;Mä jach'a k'uchu suyt'ama;Suyaykuy huk ratuchalla
+94;Procedimiento de recoleccion;Lavarse las manos con agua y jabón y colocarse los guantes.;Jabonampi umampi amparanaka jariqasiña ukatsti guantes uchasiña.;Makinchikta jabonwan yakuwan mayllakuspa guanteswan churakuy.
+95;Procedimiento de recoleccion;Limpiar al área genital;Genital uksa q’umachaña;Qhari-warmi pampata pichay
+96;Procedimiento de recoleccion;Comenzar a orinar, dejar que la primera parte de la orina salga en el inodoro;Urina qalltaña, nayrïri chiqa urinaxa baño ukar mistuñapawa;Urinayta qallariy, urinamanta ñawpaq kaq parteta bañoman lluqsichun
+97;Procedimiento de recoleccion;Colocar el frasco estéril en la corriente de orina y recolectar sin que el envase toque la piel.;Uka botella estéril ukaxa urina umaru uchañawa ukatxa apthapiñawa janïra phukhuxa janchiru llamkt’asa.;Chay estéril botellataqa urina mayuman churaspa huñuna mana chay p’uyñu qarata llamispa.
+98;Procedimiento de recoleccion;Asegurar bien el frasco y lavarse las manos;Botella suma katxaruña, amparanaka jariqaña;Botellata allinta wataspa makiykita mayllana
+99;;;;
+100;;;;
+101;;;;
+102;;;;
+103;;;;
+104;;;;
+105;;;;
+106;;;;
+107;;;;
+108;;;;
+109;;;;
+110;;;;

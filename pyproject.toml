@@ -11,5 +11,6 @@ dependencies = [
     "chromadb>=1.4.0",
     "fastembed>=0.7.0",
     "pypdf>=6.5.0",
+    "streamlit>=1.52.0",
 ]
 
