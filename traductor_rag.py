@@ -167,10 +167,10 @@ def create_translation_rag_chain(model_name="llama3.2", temperature=0.3):
         embedding_function=embedding
     )
     
-    # Crear retriever - threshold más bajo para encontrar más coincidencias
+    # Crear retriever - usar similarity en lugar de threshold para asegurar que siempre recupere documentos
     retriever = vector_store.as_retriever(
-        search_type="similarity_score_threshold",
-        search_kwargs={"k": 10, "score_threshold": 0.1},  # Más documentos y threshold más bajo
+        search_type="similarity",
+        search_kwargs={"k": 5},  # Recuperar siempre los 5 más similares
     )
     
     # Crear cadena RAG - igual que app.py
@@ -184,8 +184,8 @@ def extraer_id_respuesta(respuesta):
     """Extrae el ID de la respuesta del modelo que viene en formato ID:<numero> o ID:NONE"""
     respuesta_limpia = respuesta.strip()
     
-    # Buscar patrón ID:<numero> o ID:NONE
-    patron = r'ID:\s*(\d+|NONE)'
+    # Buscar patrón ID:<numero> o ID:NONE (con o sin espacio después de ID:)
+    patron = r'ID\s*:\s*(\d+|NONE)'
     match = re.search(patron, respuesta_limpia, re.IGNORECASE)
     
     if match:
@@ -197,11 +197,9 @@ def extraer_id_respuesta(respuesta):
         except:
             return None
     
-    # Si no encuentra el patrón, intentar buscar solo números
-    numeros = re.findall(r'\d+', respuesta_limpia)
-    if numeros:
-        return str(numeros[0])  # Devolver el primer número encontrado
-    
+    # IMPORTANTE: NO buscar números aleatorios si no se encuentra el patrón ID:<numero>
+    # Esto puede causar que se extraiga un ID incorrecto si hay números en el contexto
+    # Solo devolver None si no se encuentra el patrón exacto
     return None
 
 # Función para traducir usando RAG - Lógica simple como app.py
@@ -429,14 +427,65 @@ else:
     
     # Procesar traducción - Lógica simple como app.py
     if traducir_btn and texto_input.strip():
+        # Limpiar resultados anteriores
+        if "ultima_traduccion" in st.session_state:
+            del st.session_state.ultima_traduccion
+        
         with st.spinner("🔍 Buscando traducción en la base de conocimientos..."):
             try:
                 # Invocar RAG - igual que app.py
-                result = translate_with_rag(texto_input, direction, lang)
+                result = translate_with_rag(texto_input.strip(), direction, lang)
                 respuesta = result.get('answer', '')
+                
+                # Verificar si el contexto está vacío y recuperarlo manualmente si es necesario
+                if not result.get('context'):
+                    # El retriever no devolvió contexto, intentar recuperarlo directamente
+                    try:
+                        embedding = FastEmbedEmbeddings()
+                        vector_store = Chroma(
+                            persist_directory="./traducciones_db",
+                            embedding_function=embedding
+                        )
+                        retriever_directo = vector_store.as_retriever(
+                            search_type="similarity",
+                            search_kwargs={"k": 5},
+                        )
+                        context_docs = retriever_directo.invoke(texto_input.strip())
+                        if context_docs:
+                            result['context'] = context_docs
+                            st.info(f"✅ Contexto recuperado manualmente: {len(context_docs)} documentos")
+                    except Exception as e:
+                        st.error(f"❌ Error al recuperar contexto manualmente: {str(e)}")
+                
+                # Debug: mostrar qué está recibiendo el modelo
+                with st.expander("🔍 Debug - Respuesta del modelo", expanded=True):
+                    st.write("**Respuesta cruda del modelo:**")
+                    st.code(respuesta if respuesta else "(vacía)", language=None)
+                    st.write(f"**Frase ingresada:** `{texto_input.strip()}`")
+                    st.write(f"**Tipo de respuesta:** {type(respuesta).__name__}")
+                    st.write(f"**Longitud de respuesta:** {len(str(respuesta)) if respuesta else 0} caracteres")
+                    
+                    # Mostrar contexto recuperado
+                    if result.get('context'):
+                        st.write("**Contexto recuperado por RAG:**")
+                        st.write(f"Total documentos: {len(result['context'])}")
+                        for i, doc in enumerate(result['context'][:5], 1):  # Mostrar solo los primeros 5
+                            metadata = doc.metadata
+                            st.write(f"{i}. ID: `{metadata.get('id', '?')}` - {metadata.get('español', '?')[:50]}")
+                            st.caption(f"   Categoría: {metadata.get('categoria', '?')}")
+                    else:
+                        st.warning("⚠️ No se recuperó ningún contexto")
                 
                 # Extraer ID de la respuesta del modelo (formato: ID:<numero> o ID:NONE)
                 id_encontrado = extraer_id_respuesta(respuesta)
+                
+                # Debug: mostrar ID extraído
+                with st.expander("🔍 Debug - ID extraído", expanded=False):
+                    st.write(f"**ID extraído:** `{id_encontrado}` (tipo: {type(id_encontrado).__name__})")
+                    st.write(f"**¿ID existe en diccionario?** {id_encontrado in st.session_state.traducciones if st.session_state.traducciones and id_encontrado else 'N/A'}")
+                    if st.session_state.traducciones and id_encontrado:
+                        st.write(f"**Datos de traducción para ID '{id_encontrado}':**")
+                        st.json(st.session_state.traducciones.get(id_encontrado, {}))
                 
                 # Buscar la traducción en el diccionario usando el ID
                 traduccion_data = None
